@@ -16,7 +16,7 @@ a { color: #5856D6; }
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: April 4, 2026</p>
+<p class="date">Last updated: May 16, 2026</p>
 
 <p>PLANZ ("we", "our", or "the app") is a task planning and scheduling app developed by Amandeep Bhardwaj. Your privacy is important to us. This policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -27,6 +27,15 @@ a { color: #5856D6; }
 <li><strong>Tasks, routines, and availability settings</strong> — stored locally using Core Data. This data syncs across your devices via Apple iCloud if enabled.</li>
 <li><strong>Preferences</strong> — theme, notification settings, and onboarding state stored in UserDefaults.</li>
 <li><strong>Photos</strong> — if you attach images to tasks, they are stored locally on your device.</li>
+</ul>
+
+<h3>Voice Dictation (Speech Recognition &amp; Microphone)</h3>
+<p>PLANZ offers optional voice dictation so you can speak instead of typing when adding task titles, brain-dump ideas, task notes, and checklist items. When you tap the microphone icon:</p>
+<ul>
+<li><strong>Processing is entirely on-device</strong> using Apple's Speech framework with on-device recognition enabled. Your voice is never sent to PLANZ servers, Firebase, Google, or any third party.</li>
+<li><strong>No audio is recorded or stored.</strong> Audio buffers are processed in memory and discarded immediately. Only the resulting text — which becomes part of the task or note you create — is saved, exactly as if you had typed it.</li>
+<li><strong>The microphone is only active</strong> from the moment you tap the mic icon until you tap it again, navigate away, background the app, or another audio interruption occurs (such as an incoming call).</li>
+<li><strong>You can revoke access at any time</strong> in iOS Settings → Privacy &amp; Security → Microphone (and → Speech Recognition). The feature is opt-in per use — declining the permission prompt does not affect any other part of the app.</li>
 </ul>
 
 <h3>Data Stored on Our Servers (Firebase)</h3>
