@@ -16,7 +16,7 @@ a { color: #5856D6; }
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: May 16, 2026</p>
+<p class="date">Last updated: June 6, 2026</p>
 
 <p>PLANZ ("we", "our", or "the app") is a task planning and scheduling app developed by Amandeep Bhardwaj. Your privacy is important to us. This policy explains what data we collect, how we use it, and your rights.</p>
 
@@ -26,7 +26,7 @@ a { color: #5856D6; }
 <ul>
 <li><strong>Tasks, routines, and availability settings</strong> — stored locally using Core Data. This data syncs across your devices via Apple iCloud if enabled.</li>
 <li><strong>Preferences</strong> — theme, notification settings, and onboarding state stored in UserDefaults.</li>
-<li><strong>Photos</strong> — if you attach images to tasks, they are stored locally on your device.</li>
+<li><strong>Photos</strong> — if you attach images to tasks, they are stored on your device and, like your other task data, sync across your devices via Apple iCloud if enabled. They are not uploaded to PLANZ servers or any third party.</li>
 </ul>
 
 <h3>Voice Dictation (Speech Recognition &amp; Microphone)</h3>
@@ -38,12 +38,16 @@ a { color: #5856D6; }
 <li><strong>You can revoke access at any time</strong> in iOS Settings → Privacy &amp; Security → Microphone (and → Speech Recognition). The feature is opt-in per use — declining the permission prompt does not affect any other part of the app.</li>
 </ul>
 
+<h3>Apple Health (HealthKit)</h3>
+<p>If you grant permission, PLANZ writes the duration of your completed focus sessions to Apple Health as <strong>Mindful Minutes</strong>. This is optional and write-only — PLANZ does not read any data from Apple Health. Health data written by the app is stored by Apple in your encrypted Health database and is never sent to PLANZ servers, Firebase, or any third party. You can revoke access at any time in iOS Settings → Privacy &amp; Security → Health.</p>
+
 <h3>Data Stored on Our Servers (Firebase)</h3>
 <ul>
 <li><strong>Anonymous identifier</strong> — we use Firebase Anonymous Authentication. No email, name, or password is collected.</li>
 <li><strong>Referral data</strong> — your referral code, redemption count, and reward status are stored in Google Cloud Firestore.</li>
 <li><strong>Shared Plans</strong> — if you create or join a shared plan, the plan name, member IDs, display names, and shared tasks are stored in Firestore.</li>
 <li><strong>Device token</strong> — if you enable push notifications, your FCM device token is stored to deliver notifications for shared plan activity.</li>
+<li><strong>Purchase verification token</strong> — when you subscribe to Pro, an opaque, app-generated purchase token (Apple's <code>appAccountToken</code>) is stored to verify and reconcile your subscription entitlement and to prevent fraud. It contains no personal information.</li>
 </ul>
 
 <h3>Data Collected by Third Parties</h3>
@@ -113,12 +117,13 @@ a { color: #5856D6; }
 <ul>
 <li>You can disable ad tracking by declining the ATT prompt or via Settings > Privacy > Tracking.</li>
 <li>You can disable iCloud sync in your device's iCloud settings.</li>
+<li>You can delete your anonymous account and associated cloud data (referral records, shared-plan membership, device tokens) from within the app at any time.</li>
 <li>You can delete the app to remove all local data.</li>
-<li>To request access to, correction of, or deletion of your Firebase data, contact us at the email below. We will respond within 30 days.</li>
+<li>To request access to, correction of, or deletion of your Firebase data, you may also contact us at the email below. We will respond within 30 days.</li>
 </ul>
 
 <h2>7. Children's Privacy</h2>
-<p>PLANZ is rated 4+ and does not knowingly collect personal data from children under 13 (or under 16 in the EEA). The app uses anonymous authentication and does not require any personal information. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+<p>PLANZ is rated 12+ and is not directed to children. We do not knowingly collect personal data from children under 13 (or under 16 in the EEA). The app uses anonymous authentication and does not require any personal information. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
 
 <h2>8. Data Security</h2>
 <p>We use industry-standard security measures to protect your data, including encrypted connections (HTTPS/TLS) for all network communication, Firebase security rules to restrict data access, and Apple's built-in encryption for local storage. However, no method of transmission or storage is 100% secure.</p>
